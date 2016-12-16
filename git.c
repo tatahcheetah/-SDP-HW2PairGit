@@ -1,11 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include<time.h>
 int main()
 {
-    for(int i=0;i<10;i++)
+    int lotto[6];
+    srand(time(NULL));
+    for(int i=0;i<6;i++)
     {
-        printf("%d\n",i);
+        lotto[i]=rand() % 10;
     }
-    
+    printf("Lotto is %d",lotto);
 }
