@@ -4,11 +4,13 @@
 int main()
 {
     srand(time(NULL));
-    printf("Lotto is ");
 
-    for(int i=0;i<6;i++)
+    for(int i=0;i<4;i++)
     {
-        printf("%d", rand() % 10);
+        printf("Last 3 Digi Lotto ");
+        for(int j=0;j<3;j++)
+            printf("%d", rand() % 10);
+        printf("\n");
     }
     
 }
