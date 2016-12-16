@@ -3,11 +3,12 @@
 #include<time.h>
 int main()
 {
-    int lotto[6];
     srand(time(NULL));
+    printf("Lotto is ");
+
     for(int i=0;i<6;i++)
     {
-        lotto[i]=rand() % 10;
+        printf("%d", rand() % 10);
     }
-    printf("Lotto is %d",lotto);
+    
 }
